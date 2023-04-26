@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Consultant page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Lora&family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="material-icons menu">menu</span>
+        <ul>
+          <li><span class="material-icons close">close</span></li>
+          <li>Home</li>
+          <li>Collection</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <h1 class="heading">this interior</h1>
+    </header>
+    <div class="main">
+      <div class="first-container">
+        <h2>Modern interior</h2>
+        <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+        <a href="">Read more <span class="material-icons arrow">arrow_right_alt</span></a>
+      </div>
+      <div class="second-container">
+        <img src="photo1.png" alt="interior consultant" class="hero-image">
+        <div class="card">
+          <img src="photo2.png" alt="Aliza Webber" class="avatar">
+          <p class="person">
+            <span class="name">Aliza Webber</span>
+            <span class="role">Interior designer</span>
+          </p>
+          <p>Designed in 2020 by<br />Aliza Webber</p>
+        </div>
+      </div>
+      <footer>
+        <p>created by <b>rotimi</b> - <a href="https://devchallenges.io">devChallenges.io</a></p>
+      </footer>
+    </div>
+    <script>
+      const menu = document.querySelector('.menu');
+      const close = document.querySelector('.close');
+      const navMenu = document.querySelector('ul');
+
+      menu.onclick = function () {
+        navMenu.style.display = 'flex';
+      }
+
+      close.onclick = function () {
+        navMenu.style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
